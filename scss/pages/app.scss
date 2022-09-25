@@ -1,0 +1,102 @@
+@import "../variables/color.scss";
+
+header{
+a{
+    text-decoration: none;
+    color: black;
+    &:hover{
+        color: aqua;
+    }
+}
+}
+.logo{
+    position: relative;
+    top: 10px;
+    width: 100px;
+    padding:20px;
+}
+$colors:(
+    primary:rgb(33, 102, 102), 
+secondary: rgb(183, 57, 149),
+tertiary:white
+);
+.parrafo{
+    width: fit-content;
+    justify-content: center;
+    align-content: center;
+}
+h1{
+    color:$primary-color;
+}
+.p-primero{
+    @extend .parrafo;
+    @each $color-name, $color-value in $colors {
+        .#{$color-name}{
+            color: #{$color-value};
+        }
+        background-color: map-get($colors, primary);
+        color: map-get($colors, tertiary)
+        
+    }
+}
+@mixin estilo-parrafo ($background, $typography){
+    background-color: $background;
+    color:$typography;
+}
+.p-segundo{
+    @extend .parrafo;
+    @include estilo-parrafo(rgb(183, 57, 149),white );
+    @each $color-name, $color-value in $colors {
+        .#{$color-name}{
+            color: #{$color-value};
+        }
+    }
+}
+.foto-perfil{
+    position: absolute;
+    top:200px;
+    width:150px;
+    left: 570px;
+    align-content: center;
+}
+.datos{
+    position: absolute;
+    top: 350px;
+    padding-left: 520px;
+    padding-right: 500px;
+    text-align: center;
+    color: $primary-color;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    padding-top: 25px;
+    padding-left: 580px;
+    padding-right: 600px;
+    padding-bottom: 25px;
+}
+
+.footer-index {
+@extend .footer;
+background-color:$secondary-color;
+}
+.footer-contacto {
+    @extend .footer;
+    background-color:$primary-color;
+    }
+.footer-miperfil{
+    @extend .footer;
+    background-color:$secondary-color;
+    }
+.footer-productos{
+    @extend .footer;
+    background-color:$primary-color;
+    }
+.footer-sobrenosotros{
+    @extend .footer;
+    background-color:$secondary-color;
+    }
+
