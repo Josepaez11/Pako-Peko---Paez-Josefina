@@ -20,44 +20,10 @@ $colors:(
 secondary: rgb(183, 57, 149),
 tertiary:white
 );
-.parrafo{
-    width: fit-content;
-    justify-content: center;
-    align-content: center;
-}
 h1{
     color:$primary-color;
-}
-.p-primero{
-    @extend .parrafo;
-    @each $color-name, $color-value in $colors {
-        .#{$color-name}{
-            color: #{$color-value};
-        }
-        background-color: map-get($colors, primary);
-        color: map-get($colors, tertiary)
-        
-    }
-}
-@mixin estilo-parrafo ($background, $typography){
-    background-color: $background;
-    color:$typography;
-}
-.p-segundo{
-    @extend .parrafo;
-    @include estilo-parrafo(rgb(183, 57, 149),white );
-    @each $color-name, $color-value in $colors {
-        .#{$color-name}{
-            color: #{$color-value};
-        }
-    }
-}
-.foto-perfil{
-    position: absolute;
-    top:200px;
-    width:150px;
-    left: 570px;
-    align-content: center;
+    justify-content: center;
+    text-align: center;
 }
 .datos{
     position: absolute;
@@ -68,20 +34,18 @@ h1{
     color: $primary-color;
 }
 
-.footer {
-    position: absolute;
+.footer{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
     bottom: 0;
     font-family: 'Roboto', sans-serif;
     color: aliceblue;
-    padding-top: 25px;
-    padding-left: 580px;
-    padding-right: 600px;
-    padding-bottom: 25px;
 }
 
 .footer-index {
 @extend .footer;
-background-color:$secondary-color;
+background-color:$primary-color;
 }
 .footer-contacto {
     @extend .footer;
@@ -89,7 +53,7 @@ background-color:$secondary-color;
     }
 .footer-miperfil{
     @extend .footer;
-    background-color:$secondary-color;
+    background-color:$primary-color;
     }
 .footer-productos{
     @extend .footer;
@@ -97,6 +61,44 @@ background-color:$secondary-color;
     }
 .footer-sobrenosotros{
     @extend .footer;
-    background-color:$secondary-color;
+    background-color:$primary-color;
     }
-
+.p-primero{
+    top: 200px;
+    text-align: center;
+    padding: 20px;
+}
+.carousel{
+    position: absolute;
+    top: 150px;
+}
+.row {
+    position: relative;
+    padding: 50px;
+}
+.parrafo-sobre-nosotros{
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+}
+.portada{
+    padding-left: 370px;
+    text-align: center;
+    justify-content: center;
+}
+@media screen and (max-width:800px) {
+    .footer {
+        width: 100%;
+        padding-top: 25px;
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-bottom: 25px;
+    }
+    .portada {
+        width: 100%;
+        padding-top: 25px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 25px;
+    }
+}
