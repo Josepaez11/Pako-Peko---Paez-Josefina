@@ -1,24 +1,19 @@
 header a {
   text-decoration: none;
-  color: black;
-}
-
-header a:hover {
-  color: aqua;
-}
+  color: black; }
+  header a:hover {
+    color: aqua; }
 
 .logo {
   position: relative;
   top: 10px;
   width: 100px;
-  padding: 20px;
-}
+  padding: 20px; }
 
 h1 {
   color: #1B998B;
   justify-content: center;
-  text-align: center;
-}
+  text-align: center; }
 
 .datos {
   position: absolute;
@@ -26,91 +21,69 @@ h1 {
   padding-left: 520px;
   padding-right: 500px;
   text-align: center;
-  color: #1B998B;
-}
+  color: #1B998B; }
 
-.footer,
-.footer-index,
-.footer-contacto,
-.footer-miperfil,
-.footer-productos,
-.footer-sobrenosotros {
+.footer, .footer-index, .footer-contacto, .footer-miperfil, .footer-productos, .footer-sobrenosotros {
   width: 100%;
   justify-content: center;
   text-align: center;
   bottom: 0;
-  font-family: 'Roboto', sans-serif;
-  color: aliceblue;
-}
+  font-family: "Roboto", sans-serif;
+  color: aliceblue; }
 
 .footer-index {
-  background-color: #1B998B;
-}
+  background-color: #1B998B; }
 
 .footer-contacto {
-  background-color: #1B998B;
-}
+  background-color: #1B998B; }
 
 .footer-miperfil {
-  background-color: #1B998B;
-}
+  background-color: #1B998B; }
 
 .footer-productos {
-  background-color: #1B998B;
-}
+  background-color: #1B998B; }
 
 .footer-sobrenosotros {
-  background-color: #1B998B;
-}
+  background-color: #1B998B; }
 
 .p-primero {
   top: 200px;
   text-align: center;
-  padding: 20px;
-}
+  padding: 20px; }
 
 .carousel {
   position: absolute;
-  top: 150px;
-}
+  top: 10px; }
 
 .row {
   position: relative;
-  padding: 50px;
-}
+  padding-left: 50px;
+  padding-right: 50px; }
 
 .parrafo-sobre-nosotros {
   text-align: center;
   justify-content: center;
-  padding: 30px;
-}
+  padding: 30px; }
 
 .portada {
   padding-left: 370px;
   text-align: center;
-  justify-content: center;
-}
+  justify-content: center; }
+
+.card {
+  max-width: 400px; }
+
+.btn-lg {
+  background-color: #1B998B; }
 
 @media screen and (max-width: 800px) {
-
-  .footer,
-  .footer-index,
-  .footer-contacto,
-  .footer-miperfil,
-  .footer-productos,
-  .footer-sobrenosotros {
+  .footer, .footer-index, .footer-contacto, .footer-miperfil, .footer-productos, .footer-sobrenosotros {
     width: 100%;
-    padding-top: 25px;
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-bottom: 25px;
-  }
-
+    padding-top: 5px;
+    padding-bottom: 5px; }
   .portada {
     width: 100%;
     padding-top: 25px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 25px;
-  }
-}
+    padding-bottom: 25px; } }
