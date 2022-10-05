@@ -23,6 +23,21 @@ h1 {
   text-align: center;
   color: #1B998B; }
 
+.form-check {
+  top: 500px; }
+
+.container {
+  margin: 20px; }
+
+.form-group {
+  padding-left: 150px;
+  padding-right: 150px; }
+
+.form-mi-perfil {
+  padding-top: 20px;
+  padding-left: 400px;
+  padding-right: 400px; }
+
 .footer, .footer-index, .footer-contacto, .footer-miperfil, .footer-productos, .footer-sobrenosotros {
   width: 100%;
   justify-content: center;
@@ -73,6 +88,11 @@ h1 {
 .card {
   max-width: 400px; }
 
+.row {
+  padding-left: 250px;
+  padding-right: 200px;
+  padding-top: 30px; }
+
 .btn-lg {
   background-color: #1B998B; }
 
@@ -86,4 +106,15 @@ h1 {
     padding-top: 25px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 25px; } }
+    padding-bottom: 25px; }
+  .row {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px; }
+  .form-group {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .form-mi-perfil {
+    padding-top: 5px;
+    padding-left: 70px;
+    padding-right: 70px; } }
