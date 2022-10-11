@@ -1,8 +1,19 @@
-header a {
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
   text-decoration: none;
-  color: black; }
-  header a:hover {
-    color: aqua; }
+  list-style: none; }
+
+body {
+  background-image: url("../Imagenes/fondo celular_Mesa de trabajo 1.jpg");
+  background-size: cover; }
+
+.logo-nav {
+  float: right;
+  top: 10px;
+  width: 175px;
+  padding-top: 0px; }
 
 .logo {
   position: relative;
@@ -11,9 +22,10 @@ header a {
   padding: 20px; }
 
 h1 {
-  color: #1B998B;
+  color: #FFFBFF;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  padding-top: 20px; }
 
 .datos {
   position: absolute;
@@ -31,44 +43,86 @@ h1 {
 
 .form-group {
   padding-left: 150px;
-  padding-right: 150px; }
+  padding-right: 150px;
+  color: white; }
+
+footer {
+  width: 100%;
+  padding: 50px 0px;
+  background-image: url("../Imagenes/background-footer.svg");
+  background-size: cover; }
+
+.container_footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px; }
+
+.box_footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px; }
+
+.box_footer .logo img {
+  width: 180px; }
+
+.box_footer .terms {
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #1B998B;
+  font-size: 18px; }
+
+.box_footer h2 {
+  margin-bottom: 30px;
+  color: #1B998B;
+  font-weight: 700; }
+
+.box_footer a {
+  margin-top: 10px;
+  color: #1B998B;
+  font-weight: 600;
+  text-decoration: none; }
+
+.box_footer a:hover {
+  color: #F71735; }
+
+.box_footer a .fa-brands {
+  font-size: 20px; }
+
+.box_copyright {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px;
+  color: #1B998B; }
+
+.box_copyright p {
+  margin-top: 20px; }
+
+.box_copyright hr {
+  height: 1px; }
 
 .form-mi-perfil {
   padding-top: 20px;
   padding-left: 400px;
-  padding-right: 400px; }
-
-.footer, .footer-index, .footer-contacto, .footer-miperfil, .footer-productos, .footer-sobrenosotros {
-  width: 100%;
-  justify-content: center;
-  text-align: center;
-  bottom: 0;
-  font-family: "Roboto", sans-serif;
-  color: aliceblue; }
-
-.footer-index {
-  background-color: #1B998B; }
-
-.footer-contacto {
-  background-color: #1B998B; }
-
-.footer-miperfil {
-  background-color: #1B998B; }
-
-.footer-productos {
-  background-color: #1B998B; }
-
-.footer-sobrenosotros {
-  background-color: #1B998B; }
+  padding-right: 400px;
+  color: white; }
 
 .p-primero {
   top: 200px;
   text-align: center;
-  padding: 20px; }
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #FFFBFF; }
 
 .carousel {
   position: absolute;
-  top: 10px; }
+  top: 10px;
+  padding-bottom: 20px; }
 
 .row {
   position: relative;
@@ -78,7 +132,8 @@ h1 {
 .parrafo-sobre-nosotros {
   text-align: center;
   justify-content: center;
-  padding: 30px; }
+  padding: 30px;
+  color: white; }
 
 .portada {
   padding-left: 370px;
@@ -86,7 +141,7 @@ h1 {
   justify-content: center; }
 
 .card {
-  max-width: 400px; }
+  max-width: 200px; }
 
 .row {
   padding-left: 250px;
@@ -97,7 +152,9 @@ h1 {
   background-color: #1B998B; }
 
 @media screen and (max-width: 800px) {
-  .footer, .footer-index, .footer-contacto, .footer-miperfil, .footer-productos, .footer-sobrenosotros {
+  body {
+    background-image: url("../Imagenes/fondo celular_Mesa de trabajo 1.jpg"); }
+  .footer {
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px; }
@@ -117,4 +174,6 @@ h1 {
   .form-mi-perfil {
     padding-top: 5px;
     padding-left: 70px;
-    padding-right: 70px; } }
+    padding-right: 70px; }
+  .logo-nav {
+    display: none; } }
